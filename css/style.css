@@ -142,7 +142,6 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(26, 35, 126, 0.7);
     z-index: 1;
 }
 
@@ -343,13 +342,22 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(26, 35, 126, 0.85), rgba(0, 0, 0, 0.75));
+    background: linear-gradient(45deg, rgba(26, 35, 126, 0.5), rgba(0, 0, 0, 0.2));
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     z-index: 1;
 }
 
 .carousel-caption {
     z-index: 2;
-    padding: 0 15px;
+    background: rgba(26, 35, 126, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* About Section */
@@ -1516,12 +1524,22 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(26, 35, 126, 0.8), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(45deg, rgba(26, 35, 126, 0.1), rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     z-index: 1;
 }
 
 .carousel-caption {
     z-index: 2;
+    background: rgba(26, 35, 126, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Styles */
