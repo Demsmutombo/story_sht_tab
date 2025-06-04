@@ -591,7 +591,7 @@
                         <h5 class="listen-text">Cliquer pour écouter le témoignage complet</h5>
                         <div class="audio-player">
                             <audio controls>
-                                <source src="audio/testimonial1.mp3" type="audio/mpeg">
+                                <source src="img/audios/past_kayumbi.mp3" type="audio/mpeg">
                                 Votre navigateur ne supporte pas l'élément audio.
                             </audio>
                         </div>
@@ -611,7 +611,7 @@
                         <h5 class="listen-text">Cliquer pour écouter le témoignage complet</h5>
                         <div class="audio-player">
                             <audio controls>
-                                <source src="audio/testimonial2.mp3" type="audio/mpeg">
+                                <source src="img/audios/yves.mp3" type="audio/mpeg">
                                 Votre navigateur ne supporte pas l'élément audio.
                             </audio>
                         </div>
@@ -622,17 +622,43 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-img">
-                        <img src="img/testimonial-3.jpg" alt="Témoignage">
+                        <img src="img/audios/Bitwa" alt="Témoignage">
                     </div>
                     <div class="testimonial-text">
-                        <h4>Sophie Martin</h4>
+                        <h4>Pasteur Bitwa</h4>
                         <span>Membre depuis 2018</span>
-                        <p class="mb-4">"J'ai découvert une nouvelle famille spirituelle ici. L'amour et l'accueil que j'ai reçus m'ont aidée à grandir dans ma foi et à trouver ma place dans le corps de Christ."</p>
+                        <p class="mb-4">"J'ai découvert une nouvelle famille spirituelle ici."</p>
+                        <div class="audio-player">
+                        <audio controls>
+                            <source src="img/audios/Bitwa.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                    </div>
                     </div>
                     <div class="testimonial-quote">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
+                <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="img/audios/bala.mp3" alt="Témoignage Pasteur Balanganayi">
+                </div>
+                <div class="testimonial-text">
+                    <h4>Pasteur Balanganayi</h4>
+                    <span>Guide spirituel à l'église Shekinah Tabernacle</span>
+                    <h5 class="listen-text">Cliquer pour écouter le témoignage complet</h5>
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="img/audios/bala.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+
             </div>
         </div>
     </div>
@@ -858,6 +884,27 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+    document.querySelectorAll('audio').forEach(audio => {
+        audio.addEventListener('pause', () => {
+            audio.currentTime = 0;  // Remet à zéro pour ne pas reprendre au même endroit
+            audio.pause();          // S'assure qu'il est bien arrêté
+        });
+    });
+    </script>
+    <!-- Ton code testimonial ici -->
+
+    <script>
+    document.querySelectorAll('audio').forEach(audio => {
+        audio.addEventListener('pause', () => {
+            audio.currentTime = 0;
+            audio.pause();
+        });
+    });
+    </script>
+
+
+
 </body>
 
 </html>
