@@ -5,6 +5,10 @@
     --light: #FFFFFF;
     --dark: #1A237E;
 }
+.leader-img img:hover {
+    transform: scale(1.05);
+}
+
 
 [class^=flaticon-]:before,
 [class*=" flaticon-"]:before,
@@ -37,6 +41,65 @@ h6,
     font-weight: 600;
     transition: .5s;
 }
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  min-height: 90px;
+  gap: 15px;
+  flex: 1 1 calc(33.333% - 13.33px);
+  box-sizing: border-box;
+  max-width: calc(33.333% - 13.33px);
+}
+
+.testimonial-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  flex-grow: 1;
+}
+
+.testimonial-content h5 {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.testimonial-content small {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.testimonial-content audio {
+  width: 100%;
+}
+
+/* Responsive : 1 card par ligne sur petit écran */
+@media (max-width: 768px) {
+  .testimonial-bar {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 .btn-primary,
 .btn-secondary,
